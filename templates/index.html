@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>YOLOv8 实时检测展示</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; background: #f4f4f4; }
+        .container { margin-top: 50px; }
+        .video-box { border: 5px solid #333; display: inline-block; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AI 视觉检测系统</h1>
+        <div class="video-box">
+            <img src="{{ url_for('video_feed') }}" width="720">
+        </div>
+        <p>当前状态：正在实时推理中...</p>
+    </div>
+</body>
+</html>
